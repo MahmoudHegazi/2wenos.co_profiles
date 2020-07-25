@@ -42,13 +42,35 @@ def makeurl():
              'htmls', 'websites', 'servers', 'myservers', 'as',
               'sd', 'qw', 'er', 'hello', 'get', 'git', 'world', 'qwe',
               'big','host', 'hosters', 'hend', 'amira', 'may', 'mary',
-              'kings', 'casser', 'ghj' , 'git']
+              'kings', 'casser', 'ghj' , 'git', 'waterfall',
+              'forestall','nightfall','paintball','guildhall',
+              'screwball','stonewall','reinstall','trackball',
+              'uninstall','dodgeball','roundball','buckyball',
+              'blackball','stickball','bookstall','speedball',
+              'whitewall','slimeball','broomball','floodwall',
+              'scuzzball','wallyball','stoopball','punchball','chainfall',
+              'headstall','whipstall','footstall','multiwall','beachball',
+              'curveball','eightball','firewall','baseball','fastball',
+              'rainfall','downfall','windfall','snowball','softball',
+              'hardball','sidewall','fireball','landfall','snowfall',
+              'footwall','handball','coverall','meatball','catchall',
+              'goofball','kickball','enthrall','pratfall','forkball',
+              'cornball','footfall','mothball','hairball','highball',
+              'rockfall','spitball','carryall','puffball','deadfall','birdcall',
+              'overcall','sourball','evenfall','windgall','heelball','trapball',
+              'pushball','beanball','foosball','blowball','gildhall','spurgall',
+              'firehall','turnhall','marshall','inthrall','overall', 'install', 'eyeball',
+              'pitfall', 'oddball', 'pinball', 'outfall', 'seawall', 'gumball', 'icefall', 
+              'outcall', 'miscall', 'gadwall', 'catcall', 'holdall', 'dewfall', 'nutgall', 
+              'gingall', 'jingall', 'catfall', 'lowball', 'boxball', 'drywall','recall',
+              'thrall', 'befall', 'squall', 'appall', 'refallenom', 'egall' 'inwall']
     first = random.choice(words)
     second = random.choice(words1)
     exist = None
     newurl = None
     newurl = first + second
     exist = session.query(newUrls).filter_by(name=newurl).first()
+    #while exist newurl = first + second
     if newurl == exist:
         print('This Error taken before')
         exist = True
