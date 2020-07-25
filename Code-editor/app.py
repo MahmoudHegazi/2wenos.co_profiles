@@ -71,7 +71,7 @@ def signup():
         password = request.form.get('psw')
         job = request.form.get('jobt')
         gender = request.form.get('gender')
-        # if mail ok else user hacked the website and didn't add required info I Invited this kind of hack
+        # if mail ok else user abused the website Form (required/classes and id and names) and didn't add required info I Invited this kind of hack
         newaccount = Users(name=name, email=mail, password=password, job=job, gender=gender)
         try:
             session.add(newaccount)
