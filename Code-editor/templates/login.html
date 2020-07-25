@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+/* Add styles to the form container */
+.container {
+  position: relative;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  color: black;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.sign {
+  width: 70%;
+  background-color: crimson;
+}
+.sin_hr {
+  width: 70%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>2wenos.co</p>
+  </div>
+  <div class="middle">
+  <div class="bg-img">
+  <form action="/login" method="POST" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
+    <a href="/signup"><button class="btn sign">Signup</button></a>
+    <hr class="sin_hr">
+    <p>Don't wait</p>
+  </div>
+  <div class="bottomleft">
+    <p>Powered By 2wenos.co</p>
+  </div>
+</div>
+
+</body>
+</html>
